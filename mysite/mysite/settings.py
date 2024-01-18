@@ -126,7 +126,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # Конфигурация сервера электронной почты
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'split777hisense@gmail.com'
-EMAIL_HOST_PASSWORD = ''
+EMAIL_HOST_PASSWORD = 'dumv nkht tjlu ccnm'
+# EMAIL_HOST_PASSWORD = 'hisense159'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 # EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend' # отправка сообщений в консоль
