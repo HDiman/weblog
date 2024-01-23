@@ -8,6 +8,11 @@ import markdown
 register = template.Library()
 
 
+@register.filter(name='markdown')
+def markdown_format(text):
+    return mark_safe(markdown.markdown(text))
+
+
 @register.simple_tag
 def total_posts():
     return Post.published.count()
@@ -26,6 +31,4 @@ def get_most_commented_posts(count=5):
     ).order_by('-total_comments')[:count]
 
 
-@register.filter(name='markdown')
-def markdown_format(text):
-    return mark_safe(markdown.markdown(text))
+
