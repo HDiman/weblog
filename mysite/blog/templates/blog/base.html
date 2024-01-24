@@ -17,6 +17,11 @@
         Проект: Улицы Москвы.
         В проекте {% total_posts %} улиц(а) на данный момент.
     </p>
+    <p>
+        <a href="{% url 'blog:post_feed' %}">
+        Subscribe to my RSS feed
+        </a>
+    </p>
     <h3>Последние добавления</h3>
     {% show_latest_posts 3 %}
     <h3>Наиболее комментируемые посты</h3>
